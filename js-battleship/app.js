@@ -79,7 +79,7 @@ function addShipPiece(ship) {
         valid = shipBlocks.every(
             (_shipBlock, index) =>
                 shipBlocks[0].id % width !==
-                width - (shipBlocks.lenght - (index + 1))
+                width - (shipBlocks.length - (index + 1))
         );
     } else {
         valid = shipBlocks.every(
