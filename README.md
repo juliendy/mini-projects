@@ -2,4 +2,4 @@
 
 # 1. Battleship (w/ AI)
 - Battleship built with JavaScript
-- AI opponent
+- AI opponent (stupid for now)
