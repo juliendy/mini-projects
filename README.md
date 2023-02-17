@@ -6,4 +6,4 @@
 - [Live](https://juliendy.github.io/mini-projects/js-battleship/)
 
 todo
-[] styling + landing page
+- [ ] styling + landing page
