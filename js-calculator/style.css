@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap");
+
+:root {
+    --border-radius: 8px;
+    --main-background-color: hsl(222, 26%, 31%);
+    --keypad-background-color: hsl(223, 31%, 20%);
+    --screen-background-color: hsl(224, 36%, 15%);
+    --del-reset-key-bg-color: hsl(225, 21%, 49%);
+    --del-reset-key-bg-color-hover: hsl(224, 76%, 80%);
+    --del-reset-key-shadow-color: hsl(224, 28%, 35%);
+    --equal-key-bg-color: hsl(6, 63%, 50%);
+    --equal-key-bg-color-hover: hsl(6, 99%, 67%);
+    --equal-key-shadow-color: hsl(6, 70%, 34%);
+    --key-bg-color: hsl(30, 25%, 89%);
+    --key-bg-color-hover: hsl(0, 0%, 100%);
+    --key-shadow-color: hsl(28, 16%, 65%);
+    --text-color: hsl(0, 0%, 100%);
+    --text-color-num: hsl(221, 14%, 31%);
+    --text-color-prev-op: #ccc;
+    --text-color-equal-btn: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+    transition: background-color 0.5s;
+}
+
+.container {
+    width: 90%;
+    max-width: 45rem;
+    padding: 4rem;
+}
+
+.calc-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    background-color: var(--keypad-background-color);
+    border-radius: var(--border-radius);
+    gap: 1.8rem;
+}
+
+.calc-op-box {
+    font-family: inherit;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--key-bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2.5px var(--key-shadow-color);
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 4rem 3rem;
+    }
+
+    .calc-body {
+        gap: 1.8rem 1.2rem;
+    }
+
+    .calc-op-box {
+        padding: 1.6rem 0rem;
+        border-radius: 5px;
+    }
+}
