@@ -46,6 +46,102 @@ body {
     padding: 4rem;
 }
 
+.calc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+    position: relative;
+}
+
+.theme-number {
+    width: 4rem;
+    position: absolute;
+    top: -1.1rem;
+    right: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-number span {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.calc-text {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-left: 0.6rem;
+}
+
+.calc-theme {
+    display: flex;
+    width: 11rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calc-theme span {
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.tri-state-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--keypad-background-color);
+}
+
+.toggle-btn {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+    background-color: var(--equal-key-bg-color);
+}
+
+.active:hover {
+    background-color: var(--equal-key-bg-color-hover);
+}
+
+.calc-display {
+    width: 100%;
+    min-height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 1rem;
+    color: var(--text-color);
+    background-color: var(--screen-background-color);
+    margin-bottom: 1.2rem;
+    border-radius: var(--border-radius);
+    font-size: 3rem;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.prev-op {
+    color: var(--text-color-prev-op);
+    font-size: 2.2rem;
+}
+
 .calc-body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -64,6 +160,55 @@ body {
     box-shadow: 0 2.5px var(--key-shadow-color);
     border: none;
     outline: none;
+}
+
+.calc-op-box:hover {
+    cursor: pointer;
+    background-color: var(--key-bg-color-hover);
+}
+
+.calc-op-box span {
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: var(--text-color-num);
+}
+
+.btn {
+    color: #fff;
+    font-family: inherit;
+    text-align: center;
+    border-radius: var(--border-radius);
+    padding: 1.2rem 0;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-del,
+.btn-reset {
+    background-color: var(--del-reset-key-bg-color);
+    box-shadow: 0 2.5px var(--del-reset-key-shadow-color);
+}
+.btn-reset {
+    grid-column: span 2;
+}
+
+.btn-del:hover,
+.btn-reset:hover {
+    background-color: var(--del-reset-key-bg-color-hover);
+}
+
+.btn-equal {
+    color: var(--text-color-equal-btn);
+    background-color: var(--equal-key-bg-color);
+    box-shadow: 0 2.5px var(--equal-key-shadow-color);
+    grid-column: span 2;
+}
+
+.btn-equal:hover {
+    background-color: var(--equal-key-bg-color-hover);
 }
 
 @media (max-width: 600px) {
