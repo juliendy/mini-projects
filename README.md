@@ -1,6 +1,6 @@
 # Mini Project
 
-## 1. Battleship (w/ AI)
+## 1. Battleship (w/ AI) *WORK IN PROGRESS*
 - Battleship built with JavaScript (in-progress)
 - AI opponent (stupid for now)
 - [Live](https://juliendy.github.io/mini-projects/js-battleship/)
@@ -10,3 +10,8 @@
 - Reset button to reset the display
 - Toggle Multiple Themes
 - [Live](https://juliendy.github.io/mini-projects/js-calculator/)
+
+# Ideas
+## AI Itenerary
+
+## Flexbox Froggy (Clone)
